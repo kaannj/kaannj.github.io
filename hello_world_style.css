@@ -1,0 +1,224 @@
+/* TEXT */
+
+h1 {
+    font-size: 32px;
+    line-height: 24px;
+    margin: 50px;
+    margin-bottom: 20px;
+    padding: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 20px;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 50px;
+}
+.title_caption {
+    color: rgba(52,52,198,1);
+    line-height: 30px;
+    margin: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: auto;
+    text-align: center;
+}
+.emph {
+    color: rgba(52,52,198,1);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.title_emph {
+    color: rgb(142, 142, 220);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+body {
+    background: rgb(0,255,190);
+    /* background: linear-gradient(90deg, rgba(52,52,198,1) 0%, rgb(0, 179, 255) 73%, rgba(201,135,255,1) 100%); */
+    background: linear-gradient(90deg, rgba(22,22,178,1) 0%, rgb(14, 1, 103) 43%, rgb(89, 0, 145) 100%);
+    margin: 0;
+    padding: 0;
+}
+.main_text {
+    color: #101010;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(255,255,255,0.85);
+    border: 5px;
+    border-color: rgba(255,255,255,1);
+    border-style: solid;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 640px;
+    height: 85%;
+}
+
+.about {
+    color: rgba(52,52,198,1);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* IMAGES */
+
+.main_image {
+    border: 5px;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px;
+    padding: auto;
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+.twitter{
+    border: 5px;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 75px;
+    padding: auto;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+.twitter:hover {
+    border-color: rgba(201,135,255,0.5);
+}
+.github{
+    border: 5px;
+    background-color: #FFFFFF;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 75px;
+    padding: auto;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+.github:hover {
+    border-color: rgba(201,135,255,0.5);
+}
+
+.stock_image {
+    border: 5px;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    display: block;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width: 400px;
+    height: auto;
+}
+
+/* OTHER */
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 15%;
+    background-color: rgba(201,135,255,0.5);
+    height: 10px;
+}
+
+
+/* ANIMATIONS */
+
+.animate {
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.delay-1 { animation-delay: 1.6s; }  
+.delay-2 { animation-delay: 1.7s; }
+.delay-3 { animation-delay: 1.8s; }
+
+
+.slide_in {
+    animation-duration: 1.5s;
+    animation-name: slide_in;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes slide_in {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0%); }
+  }
+
+.scroll_down {
+    animation-duration: 1.5s;
+    animation-name: scroll_down;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes scroll_down {
+    0% { background-color: rgba(201,135,255,0.5); }
+    100% { background-color: rgba(255,255,255,0); }
+  }
+
+  /* create fade in animation for typed class */
+
+.name {
+    animation-duration: 0s;
+    animation-name: name;
+    animation-fill-mode: backwards;
+  }
+ @keyframes name {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.typed-1 { animation-delay: 1.7s; }
+.typed-2 { animation-delay: 2.1s; }
+.typed-3 { animation-delay: 2.3s; }
+.typed-4 { animation-delay: 2.7s; }
+.typed-5 { animation-delay: 3.2s; }
+.typed-6 { animation-delay: 3.6s; }
+
+.caret {
+    animation-duration: 1s;
+    animation-name: caret;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    font-size: 24px;
+  }
+@keyframes caret {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+  }
